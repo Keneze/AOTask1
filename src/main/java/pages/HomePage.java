@@ -5,8 +5,11 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
+
     private WebDriver driver;
     private By searchField = By.id("siteSearch-input");
+    private By pageTitle = By.className("main-title text-display-lg");
+
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
@@ -16,12 +19,8 @@ public class HomePage {
         return new SearchResultPage(driver);
 
     }
-    public ListerPage clickProduct(){
-        clickLink("View Freestanding");
-        return new ListerPage(driver);
-    }
-
     private void clickLink(String linkText) {
         driver.findElement(By.linkText(linkText)).click();
     }
 }
+

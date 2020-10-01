@@ -1,8 +1,7 @@
 package base;
 
 
-import org.testng.annotations.Test;
-import pages.ListerPage;
+
 import pages.SearchResultPage;
 
 
