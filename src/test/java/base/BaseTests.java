@@ -11,12 +11,12 @@ public class BaseTests {
     private WebDriver driver;
     protected HomePage homePage;
 
-
     @BeforeClass
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get("https://ao.com/");
+
         homePage = new HomePage(driver);
     }
     @AfterClass
