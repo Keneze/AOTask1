@@ -1,9 +1,6 @@
 package ListerPage;
 import base.BaseTests;
 import org.testng.annotations.Test;
-import pages.ListerPage;
-import pages.SearchResultPage;
-
 import static org.testng.Assert.assertEquals;
 
 public class ListerPageTests extends BaseTests {
