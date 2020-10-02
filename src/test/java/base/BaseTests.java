@@ -16,12 +16,13 @@ public class BaseTests {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get("https://ao.com/");
+        driver.manage().deleteAllCookies();
 
         homePage = new HomePage(driver);
     }
     @AfterClass
     public void tearDown(){
-        driver.quit();
+        //driver.quit();
     }
 }
 

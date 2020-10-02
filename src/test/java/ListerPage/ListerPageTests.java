@@ -10,10 +10,10 @@ public class ListerPageTests extends BaseTests {
 
     @Test
     public void testPageTitleIsDisplayed(){
-       SearchResultPage searchResultPage= homePage.SearchProduct();
-       ListerPage listerPage= searchResultPage.clickProduct();
+       var searchResultPage= homePage.SearchProduct();
+       var listerPage= searchResultPage.clickProduct();
        listerPage.selectProductColour();
-       assertEquals(listerPage.confirmtitlepage(), "Silver Bosch Washing Machines",
+       assertEquals(listerPage.confirmTitlePage(), "Silver Bosch Washing Machines",
                "Title Page Incorrect");
 
     }

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ListerPage {
     private WebDriver driver;
-    private By productColour = By.id("Colour-facet_fv_silver-Silver");
+    private By productColour = By.xpath("//div[contains(@class,'facet-type__colour-swatch fv_silver facet-type__colour-swatch--rebrand')]");
     private By pageTitle = By.xpath("//*[@id=\"app\"]/div[2]/div/div[2]/header/h1");
 
 
@@ -16,7 +16,7 @@ public class ListerPage {
     public void selectProductColour(){
         driver.findElement(productColour).click();
     }
-    public String confirmtitlepage(){
+    public String confirmTitlePage(){
         return driver.findElement(pageTitle).getText();
     }
 

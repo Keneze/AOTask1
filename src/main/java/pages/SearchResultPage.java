@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class SearchResultPage {
     private WebDriver driver;
-    private By selectproduct = By.cssSelector("#brands > li:nth-child(1) > a");
+    private By selectproduct = By.xpath("//*[@id=\"brands\"]/li[1]/a");
 
 
     public SearchResultPage(WebDriver driver) {
@@ -18,3 +18,5 @@ public class SearchResultPage {
     }
 
 }
+
+//*[@id="brands"]/li[1]/a
