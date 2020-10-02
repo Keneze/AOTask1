@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ListerPage {
     private WebDriver driver;
-    private By productColour = By.cssSelector(".facet-type__colour-swatch.fv_silver.facet-type__colour-swatch--rebrand");
+    private By productColour = By.cssSelector(".facet-type__colour-swatch.fv_silver");
     private By pageTitle = By.xpath("//*[@id=\"app\"]/div[2]/div/div[2]/header/h1");
 
 
